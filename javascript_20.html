@@ -2,15 +2,48 @@
 <html>
 <head>
     <script type="text/javascript">
+	console.log = function(msg) {
+        		var ul = document.getElementById("log");
+        		var li = document.createElement("li");
+        		li.appendChild(document.createTextNode(msg));
+        		ul.appendChild(li);
+   	 }
+    	window.onload = function() {
+       		document.getElementById("run").onclick = function() {
       var x = 10;
       var a = x.toString();
       var b = (123).toString();
       var c = (100 + 23).toString();
+<<<<<<< HEAD
+      console.log(typeof(a) + " : " + a); // string : 10
+      console.log(typeof(b) + " : " + b); // string: 123
+      console.log(typeof(c) + " : " + c); // string : 123
+=======
       console.log(typeof(a) + " : " + a); // string : 10
       console.log(typeof(b) + " : " + b); // string : 123
       console.log(typeof(c) + " : " + c); // string : 123
+		}
+	}
+>>>>>>> 5b877c31496799c7be03beca34e553badaaf5726
     </script>
 </head>
 <body>
+<div>
+<textarea cols="100" rows="40">
+      var x = 10;
+      var a = x.toString();
+      var b = (123).toString();
+      var c = (100 + 23).toString();
+      document.write(typeof(a) + " : " + a);
+      document.write(typeof(b) + " : " + b);
+      document.write(typeof(c) + " : " + c);
+</textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="½ÇÇà"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>
 </body>
 </html>

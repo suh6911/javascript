@@ -2,6 +2,14 @@
 <html>
 <head>
     <script type="text/javascript">
+	console.log = function(msg) {
+        		var ul = document.getElementById("log");
+        		var li = document.createElement("li");
+        		li.appendChild(document.createTextNode(msg));
+        		ul.appendChild(li);
+   	 }
+    	window.onload = function() {
+       		document.getElementById("run").onclick = function() {
       var a = parseFloat("10");
       var b = parseFloat("10.3");
       var c = parseFloat("10 20 30");
@@ -12,8 +20,30 @@
       console.log(typeof(c) + " : " + c); 
       console.log(typeof(d) + " : " + d);
       console.log(typeof(e) + " : " + e);
+		}
+	}
     </script>
 </head>
 <body>
+<div>
+<textarea cols="100" rows="40">
+      var a = parseFloat("10");
+      var b = parseFloat("10.3");
+      var c = parseFloat("10 20 30");
+      var d = parseFloat("10 years");
+      var e = parseFloat("years 10");
+      document.write(typeof(a) + " : " + a);
+      document.write(typeof(b) + " : " + b);
+      document.write(typeof(c) + " : " + c); 
+      document.write(typeof(d) + " : " + d);
+      document.write(typeof(e) + " : " + e);
+</textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="½ÇÇà"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>
 </body>
 </html>

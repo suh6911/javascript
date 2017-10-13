@@ -2,9 +2,30 @@
 <html>
 <head>
     <script type="text/javascript">
+	console.log = function(msg) {
+        		var ul = document.getElementById("log");
+        		var li = document.createElement("li");
+        		li.appendChild(document.createTextNode(msg));
+        		ul.appendChild(li);
+   	 }
+    	window.onload = function() {
+       		document.getElementById("run").onclick = function() {
        console.log(age);
+		}
+	}
     </script>
 </head>
 <body>
+<div>
+<textarea cols="100" rows="40">
+       document.write(age);
+</textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="½ÇÇà"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>
 </body>
 </html>
