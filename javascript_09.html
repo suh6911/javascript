@@ -19,5 +19,29 @@
     </script>
 </head>
 <body>
+<div>
+<textarea cols="100" rows="40">
+      document.write(true || false);
+      document.write(true || true);
+      document.write("string" || true);
+      document.write(true || "");
+      document.write(true || "string");
+      document.write(false || "");
+      document.write(false || "string");
+      document.write(5 || 0);
+      document.write(5 || -6);
+      document.write(5 || false);
+      document.write(null || 0);
+      document.write(null || "");
+      document.write(null || false);
+      document.write("yes" || "no");
+</textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="½ÇÇà"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>
 </body>
 </html>

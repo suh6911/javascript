@@ -33,5 +33,42 @@
     </script>
 </head>
 <body>
+<div>
+<textarea cols="100" rows="40">
+      document.write(!!0);
+      document.write(!!1);
+      document.write(!!'string');
+      document.write(!!'true');
+      document.write(!!'false');
+      document.write(!!'');
+      document.write(!!true);
+      document.write(!!false);
+      document.write(!!null);
+      document.write(!!undefined);
+      document.write(!!{});
+      document.write(!![]);
+      document.write(!![1, 2, 3]);
+
+      document.write(!!!0);
+      document.write(!!!1);
+      document.write(!!!'string');
+      document.write(!!!'true');
+      document.write(!!!'false');
+      document.write(!!!'');
+      document.write(!!!true);
+      document.write(!!!false);
+      document.write(!!!null);
+      document.write(!!!undefined);
+      document.write(!!!{});
+      document.write(!!![]);
+      document.write(!!![1, 2, 3]);
+</textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="½ÇÇà"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>
 </body>
 </html>

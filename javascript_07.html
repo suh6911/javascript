@@ -18,5 +18,27 @@
     </script>
 </head>
 <body>
+<div>
+<textarea cols="100" rows="40">
+    var a = 10;
+    var b = 10;
+    var c = "10";
+
+    document.write(a == b); // true
+    document.write(a == c); // true
+
+    document.write(a === b); // true
+    document.write(a === c); // false
+
+    document.write(a == b && typeof (a) == typeof (b));
+    document.write(a == c && typeof (a) == typeof (c));
+</textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="½ÇÇà"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>
 </body>
 </html>

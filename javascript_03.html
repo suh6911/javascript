@@ -16,5 +16,26 @@
 		</script>
 	</head>
 	<body>
+	<div>
+	<textarea  cols ="100" rows="40">
+	var language = "javascript";
+		document.write(language[0]);
+		document.write(language[1]);
+		document.write(language[2]);
+		document.write(language[3]);
+
+		language[0] = 'A';
+		language[1] = 'B';
+		language[2] = 'C';
+		language[3] = 'D';
+		document.write(language);
+	</textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="½ÇÇà"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>
 	</body>
 </html>
