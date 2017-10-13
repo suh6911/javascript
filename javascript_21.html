@@ -2,6 +2,14 @@
 <html>
 <head>
     <script type="text/javascript">
+	console.log = function(msg) {
+        		var ul = document.getElementById("log");
+        		var li = document.createElement("li");
+        		li.appendChild(document.createTextNode(msg));
+        		ul.appendChild(li);
+   	 }
+    	window.onload = function() {
+       		document.getElementById("run").onclick = function() {
       var x = 9.656;
       var a = x.toExponential(2);
       var b = x.toExponential(4);
@@ -9,6 +17,8 @@
       console.log(typeof(a) + " : " + a);
       console.log(typeof(b) + " : " + b);
       console.log(typeof(c) + " : " + c);
+		}
+	}
     </script>
 </head>
 <body>
